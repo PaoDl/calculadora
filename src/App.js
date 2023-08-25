@@ -1,11 +1,13 @@
 //import logo from './logo.svg';
 import './App.css';
-import freecodecampLogo from  './imagenes/freecodecamp-logo.png'
+import Logo from  './componentes/freecodecampLogo'
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
 import { useState } from 'react';
 import {evaluate} from 'mathjs';
+
+
 
 
 function App() {
@@ -22,18 +24,16 @@ const calcularResultado = ()=>{
   }else{
     alert("Por Favor Ingrese Datos")
   }
+
 };
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
-        <img
-            src={freecodecampLogo}
-            className='freecodecamp-logo'
-            alt='Logo de freeCodeCamp' />
+        <img className='img' src={Logo.Logo} />
       </div>
       
       <div className='contenedor-calculadora'>
-
+ 
           <Pantalla input={input}/>
 
           <div className='fila'>
